@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "build-compliance": "cd nova-components/Compliance && npm run dev",
+        "build-compliance-prod": "cd nova-components/Compliance && npm run prod",
+        "build-newcompliance": "cd nova-components/Newcompliance && npm run dev",
+        "build-newcompliance-prod": "cd nova-components/Newcompliance && npm run prod",
+        "build-calendar": "cd nova-components/Calendar && npm run dev",
+        "build-calendar-prod": "cd nova-components/Calendar && npm run prod"
+    },
+    "devDependencies": {
+        "axios": "^0.25",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14"
+    }
+}

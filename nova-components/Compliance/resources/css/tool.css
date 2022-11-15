@@ -1,0 +1,28 @@
+/* Nova Tool CSS */
+.repeater{
+	font-size: 13px;
+    font-weight: 800;
+    color: #97144c;
+    padding: 0px 20px 0px 0px;
+}
+
+.select-box{
+	font-size:13px;
+	padding-left: 10px;
+}
+
+#file-upload-button{
+	padding: 4px;
+}
+
+.bg-primary-500{
+	background-color: #96144c;
+}
+
+.hover:bg-primary-400:hover{
+	background-color: #96144C;
+}
+
+h1{
+	color:red;
+}

@@ -1,0 +1,295 @@
+/* Nova Tool CSS */
+/* Nova Tool CSS */
+
+.total-container {
+  display: flex;
+  gap: 20px;
+}
+
+.fc-daygrid-event-harness {
+  cursor: pointer;
+}
+
+.total-container * {
+  box-sizing: border-box;
+}
+
+
+.total-container > .calendar-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+
+  padding: 22px;
+}
+
+.total-container > .calendar-wrapper > .event-filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.total-container > .calendar-wrapper > .event-filter > button {
+  padding: 4px 10px;
+  background-color: #164b88;
+  border: 1px solid #05365e;
+  color: white;
+  border-radius: 16px;
+  opacity: 0.6;
+}
+
+.total-container > .calendar-wrapper > .event-filter > button.active {
+  opacity: 1;
+}
+
+.total-container .event-info-wrapper {
+  width: 0;
+  flex-grow: 1;
+  height: auto;
+  background-color: transparent !important;
+}
+
+.total-container  .event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+.total-container  .event-info > h3 {
+  color: #5673b3;
+  font-size: 24px;
+  padding: 40px 22px 0 22px;
+  font-weight: bold;
+}
+
+.total-container .event-info .info-container {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 22px;
+  border-bottom: 2px solid #26365e88;
+}
+
+.total-container .event-info .info-item {
+  width: 40%;
+  flex-grow: 1;
+}
+
+.total-container .event-info .info-item h4 {
+  font-size: 16px;
+  color: #888888;
+  font-weight: bold;
+}
+
+.info-container.upload-controller {
+  padding: 0 22px !important;
+  border-bottom-color: transparent !important;
+}
+
+.info-container.upload-controller .info-item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.info-container.upload-controller .info-item input {
+  background-color: #05365e;
+  border: 1px solid #ded5d9;
+  color: #ded5d9;
+  border-radius: 8px;
+  padding: 6px;
+  width: 0;
+  flex-grow: 1;
+  outline: none;
+}
+
+.info-container.upload-controller .info-item button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #884915;
+  border-radius: 8px;
+}
+
+.info-container.upload-controller .info-item button:hover {
+  opacity: 0.95;
+}
+
+.event-info-wrapper .button-group {
+  display: flex;
+  gap: 22px;
+}
+
+.event-info-wrapper .button-group button {
+  padding: 8px 0;
+  text-align: center;
+  flex-grow: 1;
+
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #884915;
+  border-radius: 8px;
+}
+
+.event-info-wrapper .button-group button:hover {
+  opacity: 0.95;
+}
+
+.event-info-wrapper .text-area-container {
+  padding: 0 22px 22px 22px;
+  border-bottom: 2px solid #26365e88;
+}
+
+.event-info-wrapper .text-area-container textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #05365e;
+  border: 1px solid #ded5d9;
+  color: #ded5d9;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #a0a9b4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 96, 117);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.spinner {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #05365e33;
+}
+
+.spinner img {
+  width: 70px;
+  height: auto;
+}
+
+.selected-file-list  {
+  padding: 0 22px 12px 22px;
+  border-bottom: 2px solid #26365e88;
+}
+
+.selected-file-list .selected-files-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.selected-file-list .selected-files-container div {
+  border-radius: 4px;
+  background-color: #05365e;
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.selected-file-list .selected-files-container div img {
+  height: 12px;
+  cursor: pointer;
+}
+
+.info-result {
+  padding: 0 22px 22px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.info-result h4 {
+  color: #888888;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.info-result .radio-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.info-result .radio-button::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  border: 1px solid #884915;
+  left: 0;
+  top: 3px;
+}
+
+.info-result .radio-button.active::before {
+  background-color: #884915;
+}
+
+.info-result .notify-check {
+  height: 14px;
+  width: 14px;
+
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #884915;
+  border-radius: 4px;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.info-result .notify-check img {
+  width: 12px;
+  height: 12px;
+  display: none;
+}
+
+.info-result .notify-check.active {
+  background-color: #884915;
+}
+.info-result .notify-check.active img {
+  display: block;
+}

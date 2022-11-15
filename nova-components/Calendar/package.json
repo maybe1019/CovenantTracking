@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production",
+    "nova:install": "npm --prefix='../../vendor/laravel/nova' ci"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.22",
+    "laravel-mix": "^6.0.41",
+    "postcss": "^8.3.11",
+    "vue-loader": "^16.8.3"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^5.11.2",
+    "@fullcalendar/daygrid": "^5.11.2",
+    "@fullcalendar/interaction": "^5.11.2",
+    "@fullcalendar/timegrid": "^5.11.2",
+    "@fullcalendar/vue3": "^5.11.2",
+    "fullcalendar-scheduler": "^5.11.2",
+    "moment": "^2.29.4",
+    "vue-full-calendar": "^2.8.1-0"
+  }
+}
